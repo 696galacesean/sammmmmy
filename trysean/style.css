@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #434f3e, #d5d5cd);
+  color: #333;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #333c2f;
+  padding: 10px 20px;
+  color: white;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.search-bar {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+
+.icons img {
+  width: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+main {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.post {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.star {
+  margin-left: auto;
+  color: orange;
+}
+
+.post-img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.post-actions img {
+  width: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.username {
+  font-weight: bold;
+  margin: 5px 0 2px;
+}
+
+.caption {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
