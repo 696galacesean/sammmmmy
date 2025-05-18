@@ -4,21 +4,64 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>YAP - Log In / Sign Up</title>
-
- <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
+
+  <!-- Sign-Up Section -->
+  <div id="signup" class="container">
     <div class="left">
       <div class="logo-img">⭐YAP</div>
       <p><em>YAP</em> is a social platform where you can share your life stories, rants, and personal moments freely. Whether it’s a major life event or a random late-night thought, <em>YAP</em> is your digital space to be real—no filters, no judgment.</p>
     </div>
-    <div class="right" id="form-container">
-      <!-- Form dynamically loaded here -->
+    <div class="right">
+      <div class="star">⭐</div>
+      <h2>Create New Account</h2>
+      <form action="" method="">
+        <input type="text" id="username-su" placeholder="Username" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password-su" placeholder="Password" required />
+        <input type="password" id="confirm-password" placeholder="Confirm Password" required />
+      </form>
+      <button class="btn" onclick="createUser()">Create Account</button>
+      <div class="link-text">
+        Already a member? <a href="javascript:void(0)" onclick="changePage()">Log in</a>
+      </div>
     </div>
   </div>
 
-  <script src="try.js"></script>
+  <!-- Login Section -->
+  <div id="login" class="container hidden">
+    <div class="left">
+      <div class="logo-img">⭐YAP</div>
+      <p><em>YAP</em> is a social platform where you can share your life stories, rants, and personal moments freely. Whether it’s a major life event or a random late-night thought, <em>YAP</em> is your digital space to be real—no filters, no judgment.</p>
+    </div>
+    <div class="right">
+      <div class="star">⭐</div>
+      <h2>Speak Freely, Anonymously</h2>
+      <form action="" method="">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="password" id="password" placeholder="Password" required />
+      </form>
+      <button class="btn" onclick="authUser()">Login</button>
+      <div class="link-text">
+        New here? <a href="javascript:void(0)" onclick="changePage()">Create Account</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Success Section -->
+  <div id="success" class="container hidden">
+    <div class="left">
+      <div class="logo-img">⭐YAP</div>
+      <p>Welcome back to <em>YAP</em>! Ready to share something?</p>
+    </div>
+    <div class="right">
+      <h2>Login Successful!</h2>
+      <button class="btn" onclick="back()">Go Back</button>
+    </div>
+  </div>
+
+  <script src="try.js" defer></script>
 </body>
 </html>
